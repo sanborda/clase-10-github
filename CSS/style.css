@@ -1,0 +1,176 @@
+/*---- RESETEO DE LOS VALORES ----*/
+/* saca los margenes y pone que se resten los valores*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*reset del tamaño de la letra para que 1em y 1rem= 10 px*/
+html {
+  font-size: 62, 5%;
+}
+/* sacarle los puntos o letras a las listas */
+ul,ol {
+  list-style-type: none;
+}
+/*sacarle el color violeta o el subrayado de los links*/
+a {
+  text-decoration: none;
+  color:black;
+}
+/*que las imagenes ocupen el 100 % de su contenedor*/
+img {
+  width: 100;
+}
+
+/* FUENTE IMPORTADA DESDE GOOGLE FONT */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,100;1,200&family=Roboto:ital@1&display=swap");
+
+/*#header {
+  background-image: url(../imagenes/fondo.jpg);
+}*/
+/* ---------------atributos de a---------------------- */
+a {
+  text-decoration: none;
+  font-size: medium;
+  color: rgb(22, 3, 3);
+}
+
+body {
+  font-size: 16px;
+  font-family: "Monserrat", sans-serif;
+  color: #130303;
+  background-color: #dbdf10;
+}
+
+/*----------------------------------GRID--------------------------------------*/
+#grilla{
+display: grid;
+grid-template-rows: repeat(4 , 1fr);
+grid-template-columns: repeat(4 , 1fr);
+grid-template-areas: 
+  " header header header header "  
+  " principal  principal principal principal"
+  " principal  principal principal principal"
+  " footer footer footer footer"
+  ;
+  }
+
+/*-----------------------------header----------------*/
+#header{
+  background-color: green;
+  grid-area: header;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: baseline;
+  justify-content: space-between;
+  align-items: flex-end;
+
+}
+
+
+/*modificar tamaño del logo */
+.header__logo {
+  width: 100px;
+  height: 100px;
+
+}
+
+/* flex de navegador*/
+.listado{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 6rem;
+  
+}
+
+/*--------------------principal-----------*/
+#principal{
+  background-color: chocolate;
+  grid-area: principal;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: baseline;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+ 
+
+
+/*-------------------- footer------------ */
+#footer{
+  background-color: crimson;
+  grid-area: footer;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: baseline;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+ 
+.texto{
+  border: 3px solid rgb(0, 0, 0);
+  width: 50%;
+  justify-content: center;
+  
+}
+
+
+/*
+.footer .texto {
+  text-align: center;
+}
+
+.footer .social a {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+*/
+
+
+/*-------------media query------------*/
+/*
+@media screen and (max-width  576px) 
+{
+  #grilla{
+  grid-template-areas: 
+  " header header header header "
+  " principal  principal principal principal"
+  " principal  principal principal principal"
+  " footer footer footer footer";
+  }
+
+}
+
+
+@media screen and (max width 576px) 
+{
+  #grilla{
+    grid-template-areas: 
+  " header header header header "
+  " principal  principal principal principal"
+  " principal  principal principal principal"
+  " footer footer footer footer";
+  }
+}
+  
+
+  
+
+
+/*@media screen and (min-width 993px) 
+{
+  #grilla{
+  grid-template-areas: 
+  " header header header header "
+  " principal  principal principal principal"
+  " principal  principal principal principal"
+  " footer footer footer footer";
+  }
+
+}*/
+
+
