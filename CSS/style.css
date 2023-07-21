@@ -1,36 +1,10 @@
-/*---- RESETEO DE LOS VALORES ----*/
-/* saca los margenes y pone que se resten los valores*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-/*reset del tamaño de la letra para que 1em y 1rem= 10 px*/
-html {
-  font-size: 62, 5%;
-}
-/* sacarle los puntos o letras a las listas */
-ul,ol {
-  list-style-type: none;
-}
-/*sacarle el color violeta o el subrayado de los links*/
-a {
-  text-decoration: none;
-  color:black;
-}
-/*que las imagenes ocupen el 100 % de su contenedor*/
-img {
-  width: 100;
-}
 
-/* FUENTE IMPORTADA DESDE GOOGLE FONT */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,100;1,200&family=Roboto:ital@1&display=swap");
 
 /*#header {
   background-image: url(../imagenes/fondo.jpg);
 }*/
 /* ---------------atributos de a---------------------- */
+
 a {
   text-decoration: none;
   font-size: medium;
@@ -42,7 +16,10 @@ body {
   font-family: "Monserrat", sans-serif;
   color: #130303;
   background-color: #dbdf10;
-}
+
+  }
+
+  
 
 /*----------------------------------GRID--------------------------------------*/
 #grilla{

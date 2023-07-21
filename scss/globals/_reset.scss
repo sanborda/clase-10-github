@@ -1,0 +1,25 @@
+/*---- RESETEO DE LOS VALORES ----*/
+/* saca los margenes y pone que se resten los valores*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /*reset del tamaño de la letra para que 1em y 1rem= 10 px*/
+  html {
+    font-size: 62, 5%;
+  }
+  /* sacarle los puntos o letras a las listas */
+  ul,ol {
+    list-style-type: none;
+  }
+  /*sacarle el color violeta o el subrayado de los links*/
+  a {
+    text-decoration: none;
+    color:black;
+  }
+  /*que las imagenes ocupen el 100 % de su contenedor*/
+  img {
+    width: 100;
+  }
+  

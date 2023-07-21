@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/* IMPORT FONT*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,100;1,200&family=Roboto:ital@1&display=swap");
+/*---- RESETEO DE LOS VALORES ----*/
+/* saca los margenes y pone que se resten los valores*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*reset del tamaño de la letra para que 1em y 1rem= 10 px*/
+html {
+  font-size: 62, 5%;
+}
+
+/* sacarle los puntos o letras a las listas */
+ul, ol {
+  list-style-type: none;
+}
+
+/*sacarle el color violeta o el subrayado de los links*/
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*que las imagenes ocupen el 100 % de su contenedor*/
+img {
+  width: 100;
+}
+
+/*----------------------------------GRID--------------------------------------*/
+#grilla {
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas: " head head head head head head head head" " head head head head head head head head" " principal  principal principal principal principal  principal principal principal" " principal  principal principal principal principal  principal principal principal" " principal  principal principal principal principal  principal principal principal" " principal  principal principal principal principal  principal principal principal" " footer footer footer footer footer footer footer footer" " footer footer footer footer footer footer footer footer";
+}
+
+#header {
+  background-color: green;
+  grid-area: head;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  align-content: baseline;
+}
+
+/*modificar tamaño del logo */
+.header__logo {
+  width: 100px;
+  height: 100px;
+}
+
+/* flex de navegador*/
+.listado {
+  display: flex;
+  justify-content: space-between;
+  gap: 6rem;
+  flex-wrap: wrap;
+}
+
+/*--------------------principal-----------*/
+#principal {
+  background-color: chocolate;
+  grid-area: principal;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  align-content: baseline;
+}
+
+/*-------------------- footer------------ */
+#footer {
+  background-color: crimson;
+  grid-area: footer;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  align-content: baseline;
+}
+
+.texto {
+  border: 3px solid rgb(0, 0, 0);
+  width: 50%;
+  justify-content: center;
+}
+
+img.carousel__item {
+  width: 100px;
+  height: 100px;
+}
+
+/*# sourceMappingURL=style2.css.map */
